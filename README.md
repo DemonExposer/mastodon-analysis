@@ -2,5 +2,5 @@
 
 /api/v1/directory for account registration data. offset and limit for pagination
 
-mastodon.com.tr
+mastodon.com.tr <br/>
 https://github.com/mapperfr/academics-on-mastodon?search=1#serverscommunities
