@@ -2,3 +2,4 @@
 /mastodon-retrieval/obj/
 /mastodon-retrieval/.idea/
 /.idea
+*.json
