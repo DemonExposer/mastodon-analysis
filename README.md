@@ -4,4 +4,5 @@
 
 mastodon.com.tr <br/>
 mastoturk.org <br/>
+maybe check mastodon.social also for Turkish info <br/>
 https://github.com/mapperfr/academics-on-mastodon?search=1#serverscommunities
