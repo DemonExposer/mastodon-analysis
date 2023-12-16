@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<body>
+		<canvas id="myChart" style="width:100%;max-width:1500px"></canvas>
+	</body>
+	<script>
+		const dateToNum = str => Number(str.replace("-", ""));
+
+		let data = {/* put data here */};
+
+		const numKeysData = Object.keys(data).map(dateToNum);
+		let min = Math.min(...numKeysData);
+		let max = Math.max(...numKeysData);
+		let startMonth = min % 100;
+		let startYear = Math.floor(min / 100);
+		let endMonth = max % 100;
+		let endYear = Math.floor(max / 100);
+
+		// Add all months where zero people joined
+		while (startMonth != endMonth || startYear != endYear) {
+			if (startMonth == 12) {
+				startYear++;
+				startMonth = 1;
+			} else {
+				startMonth++;
+			}
+
+			let key = `${startYear}-${String(startMonth).padStart(2, 0)}`;
+			if (data[key] === undefined)
+				data[key] = 0;
+		}
+
+		// Order chronologically
+		const orderedData = Object.keys(data)
+			.sort((a, b) => {
+				a = dateToNum(a);
+				b = dateToNum(b);
+
+				if (a > b)
+					return 1;
+				else if (a == b)
+					return 0;
+				else
+					return -1;
+			})
+			.reduce((obj, key) => {
+				obj[key] = data[key];
+				return obj;
+			}, {});
+
+		console.log(orderedData);
+
+		const xValues = Object.keys(orderedData);
+		const yValues = Object.values(orderedData);
+
+		new Chart("myChart", {
+			type: "bar",
+			data: {
+				labels: xValues,
+				datasets: [{
+					backgroundColor: "blue",
+					data: yValues
+				}]
+			}
+		});
+	</script>
+</html>
