@@ -12,6 +12,7 @@ public class Program {
 			};
 
 			JArray totalAccounts = new JArray();
+			int fileNo = 0;
 			for (int offset = 0;; offset += 80) {
 				HttpResponseMessage result =
 					await client.GetAsync($"/api/v1/directory?local=true&limit=80&offset={offset}");
@@ -26,6 +27,10 @@ public class Program {
 				foreach (JToken? t in accounts)
 					totalAccounts.Add(t.Value<JObject>()!);
 
+				if (totalAccounts.Count > 10000) {
+					await File.WriteAllTextAsync($"accounts_{domain}_{fileNo++}.json", totalAccounts.ToString());
+				}
+
 				if (remainingRequests == 0) {
 					TimeSpan waitingTime = properDateTime.Subtract(DateTime.Now).Add(new TimeSpan(0, 0, 5));
 					Thread.Sleep(waitingTime);
@@ -35,7 +40,7 @@ public class Program {
 					break;
 			}
 
-			await File.WriteAllTextAsync($"accounts_{domain}.json", totalAccounts.ToString());
+			await File.WriteAllTextAsync($"accounts_{domain}_{fileNo}.json", totalAccounts.ToString());
 		} catch (Exception e) {
 			Console.WriteLine("pech man");
 		}
