@@ -29,6 +29,7 @@ public class Program {
 
 				if (totalAccounts.Count > 10000) {
 					await File.WriteAllTextAsync($"accounts_{domain}_{fileNo++}.json", totalAccounts.ToString());
+					totalAccounts = new JArray();
 				}
 
 				if (remainingRequests == 0) {
