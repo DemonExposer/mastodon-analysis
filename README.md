@@ -12,7 +12,7 @@ https://github.com/mapperfr/academics-on-mastodon?search=1#serverscommunities
 User accounts from various Mastodon servers were taken using the Mastodon API endpoint /api/v1/directory.
 Only local accounts were grabbed for the academic and Turkish dataset. The mastodon.social instance was used as a baseline to compare against. Since the point of this is to have as many accounts as possible and also getting just local accounts, seemed to ignore a large part of the users, mastodon.social was queried for non-local accounts as well.<br/>
 <br/>
-For the academic dataset, the servers listed on https://github.com/mapperfr/academics-on-mastodon?search=1#serverscommunities were used. For the Turkish dataset, mastodon.com.tr and mastoturk.org were used.
+For the academic dataset, the servers listed on https://github.com/mapperfr/academics-on-mastodon?search=1#serverscommunities were used (only the ones which use HTTPS). For the Turkish dataset, mastodon.com.tr and mastoturk.org were used.
 
 ## Analysis process
 
@@ -22,3 +22,6 @@ With this information, it can be seen what events influenced the usage of Mastod
 ## Visualization process
 
 The monthly data was visualized in a bar chart using the <a href="https://www.chartjs.org">chart.js</a> library
+<br/>
+<br/>
+For the instance creation, I just took the first registered user, maybe it is wrong with these customized dates, but it seems fine, otherwise the server contact could be taken, but I fear that that might not always be the first user
