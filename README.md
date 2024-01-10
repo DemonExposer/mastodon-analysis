@@ -5,7 +5,11 @@
 mastodon.com.tr <br/>
 mastoturk.org <br/>
 use mastodon.social for comparison <br/>
-https://github.com/mapperfr/academics-on-mastodon?search=1#serverscommunities
+https://github.com/mapperfr/academics-on-mastodon?search=1#serverscommunities <br/>
+<br/>
+politics: <br/>
+social.overheid.nl <br/>
+eupolicy.social <br/>
 
 ## Retrieval process
 
