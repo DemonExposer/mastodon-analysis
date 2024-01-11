@@ -10,7 +10,8 @@ https://github.com/mapperfr/academics-on-mastodon?search=1#serverscommunities <b
 politics: <br/>
 social.overheid.nl <br/>
 eupolicy.social <br/>
-social.network.europa.eu
+social.network.europa.eu <br/>
+wpr account on mastodon.social
 
 ## Retrieval process
 
