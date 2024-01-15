@@ -14,6 +14,7 @@ social.network.europa.eu <br/>
 wpr account on mastodon.social <br/>
 kolektiva.social <br/>
 sociale.network <br/>
+bhre.social (actual activism) <br/>
 
 just use https://mastodon.help/instances/ to find instances
 
