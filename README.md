@@ -11,7 +11,11 @@ politics: <br/>
 social.overheid.nl <br/>
 eupolicy.social <br/>
 social.network.europa.eu <br/>
-wpr account on mastodon.social
+wpr account on mastodon.social <br/>
+kolektiva.social <br/>
+sociale.network <br/>
+
+just use https://mastodon.help/instances/ to find instances
 
 ## Retrieval process
 
