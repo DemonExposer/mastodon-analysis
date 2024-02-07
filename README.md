@@ -15,6 +15,12 @@ wpr account on mastodon.social <br/>
 kolektiva.social <br/>
 sociale.network <br/>
 bhre.social (actual activism) <br/>
+progressives.social <br/>
+leftist.network <br/>
+thinktanki.social <br/>
+toots.matapacos.dog <br/>
+tldr.nettime.org <br/>
+thecanadian.social <br/>
 
 just use https://mastodon.help/instances/ to find instances
 
