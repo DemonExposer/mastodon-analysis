@@ -1,4 +1,7 @@
 #!/usr/local/bin/node
+
+// This program merges all the JSON files of the different mastodon instances into one large JSON file
+
 const fs = require("fs");
 
 var res = [];

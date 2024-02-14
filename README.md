@@ -1,28 +1,6 @@
 # mastodon-analysis
 
-/api/v1/directory for account registration data. offset and limit for pagination
-
-mastodon.com.tr <br/>
-mastoturk.org <br/>
-use mastodon.social for comparison <br/>
-https://github.com/mapperfr/academics-on-mastodon?search=1#serverscommunities <br/>
-<br/>
-politics: <br/>
-social.overheid.nl <br/>
-eupolicy.social <br/>
-social.network.europa.eu <br/>
-wpr account on mastodon.social <br/>
-kolektiva.social <br/>
-sociale.network <br/>
-bhre.social (actual activism) <br/>
-progressives.social <br/>
-leftist.network <br/>
-thinktanki.social <br/>
-toots.matapacos.dog <br/>
-tldr.nettime.org <br/>
-thecanadian.social <br/>
-
-just use https://mastodon.help/instances/ to find instances
+This readme is not exactly up to date, but all the info should be in the report
 
 ## Retrieval process
 

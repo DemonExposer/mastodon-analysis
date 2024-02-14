@@ -18,7 +18,7 @@ public class InstanceEndpoint : Endpoint {
 			JObject data = JObject.Parse(new StreamReader(result.Content.ReadAsStream()).ReadToEnd());
 
 			File.WriteAllText($"instance_data_{domain}.json", data.ToString());
-		} catch (Exception) {
+		} catch (Exception) { // not a great way of handling errors, but this should only be triggered when a server could not be reached or if it doesn't use HTTPS
 			Console.WriteLine("couldn't retrieve data, continuing...");
 		}
 	}

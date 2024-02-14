@@ -1,4 +1,8 @@
 #!/usr/local/bin/node
+
+// This takes the account creation date for each account and puts it into monthly buckets
+// This way it can be seen how many users joined the given collection of instances for every month
+
 const fs = require("fs");
 
 var res = {};
