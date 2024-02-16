@@ -2,6 +2,8 @@ using Newtonsoft.Json.Linq;
 
 namespace mastodon_retrieval; 
 
+// This code is never used. What it was planned for could just be done with DirectoryEndpoint instead. I will leave this here to show why the abstract class Endpoint exists.
+
 public class InstanceEndpoint : Endpoint {
 	public override void call(string[] domains) {
 		Console.WriteLine(domains.Length);
